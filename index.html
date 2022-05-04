@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Islam Knowledge Quiz</title>
+
+    <link rel="icon" type="image/x-icon" href="quizimages/favicon.ico" />
+
+    <script src="quizproject.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="quizproject.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="theme-color" content="#317EFB" />
+
+    <link rel="apple-touch-icon" href="/example.png" />
+
+    <meta
+      name="description"
+      content="Mohamads Islam Knowledge Quiz to teach you more about islam and some nice cool facts"
+    />
+
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <div id="lightbox" onclick="closeLightBox()">
+      <div id="message">This is the message</div>
+    </div>
+
+    <h1>Islam Knowledge Quiz</h1>
+
+    <div class="grid-container">
+      <div class="header">
+        <div id="question">The Question</div>
+      </div>
+
+      <div class="left">
+        <div>
+          <div class="options" id="a" onclick="markIt('a')">A.</div>
+          <div class="options" id="b" onclick="markIt('b')">B.</div>
+          <div class="options" id="c" onclick="markIt('c')">C.</div>
+          <div class="options" id="d" onclick="markIt('d')">D.</div>
+        </div>
+
+        <div id="countdown">Timer Is Starting</div>
+
+        <div id="hint">Hint goes here</div>
+      </div>
+
+      <div class="right">
+        <img id="image" src="quizimages/q1.jpg" alt="image" />
+      </div>
+
+      <div class="footer1">
+        <button id="hintButton">Hint?</button>
+      </div>
+
+      <div class="footer2">
+        <p>Score <span id="score">0 / 10</span></p>
+      </div>
+    </div>
+  </body>
+</html>
